@@ -1,0 +1,13 @@
+type (
+	ProduceReq {
+		Msg string `form:"msg"`
+	}
+
+	ProduceResp {
+		Id int64 `json:"id"`
+	}
+)
+service demo {
+	@handler Produce
+	get /demo/produce (ProduceReq) returns (ProduceResp)
+}

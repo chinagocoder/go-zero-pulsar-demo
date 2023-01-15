@@ -1,0 +1,11 @@
+Name: demo
+
+Pulsar:
+  Brokers:
+    - 127.0.0.1:6650
+  Topic: topic_demo
+  Conns: 1
+  Processors: 1
+  SubscriptionName: sub_topic_demo
+  AuthName: token
+  AuthParams: '{"token":"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiJ9.CNYN8h04Z_wJcvNssVhcyZKDlqvwOSxmkXeOy6WH8pM"}'
